@@ -16,7 +16,7 @@ int main() {
     cout<<'\n';
 
     int a ;
-    cout<<'size of a is : '<<sizeof(a)<<endl;  // gives a garbage vaue: because of single quotes '' it is a character literals we have to use string literals ""
+    // cout<<'size of a is : '<<sizeof(a)<<endl;  // gives a garbage vaue: because of single quotes '' it is a character literals we have to use string literals ""
     cout<<"size of a is : "<<sizeof(a)<<endl;
 
     char ch1 = -108;
@@ -29,16 +29,16 @@ int main() {
     cout << "Character: " << int(ch) << endl; // int(ch) it works this way but it is not recommended to use this way bcz it is not a typecast operator, it calls constructor in classes  
     cout << "Character: " << (int)ch << endl; // this represent the ASCII value of the character , (int)ch is a type cast operator that converts the character to its ASCII value
 
-    char ch1 = 65; // ASCII value of 'A'
-    cout << "Character for 65: " << ch1 << endl; // prints 'A'
+    char ch5 = 65; // ASCII value of 'A'
+    cout << "Character for 65: " << ch5 << endl; // prints 'A'
     
     // char ch2 = 'abcd'; 
     // cout << "Character for 'abcd': " << ch2 << endl; // warning: overflow in conversion from 'int' to 'char' changes value from '1633837924' to '100' [-Woverflow]
 
-    signed char ch3 = -191; // gives a warning: overflow in conversion from 'int' to 'signed char' changes value from '-191' to '65' [-Woverflow] meaning it is out of range for signed char
-    unsigned char ch4 = -191; // gives a warning: overflow in conversion from 'int' to 'unsigned char' changes value from '-191' to '65' [-Woverflow] meaning it is out of range for unsigned char
-   cout << "Character for unsigned -5: " << ch4 << endl;  // Prints 'A' (ASCII 65)
-cout << "Character for signed -5: " << ch3 << endl;    // Also prints 'A'
+//     signed char ch3 = -191; // gives a warning: overflow in conversion from 'int' to 'signed char' changes value from '-191' to '65' [-Woverflow] meaning it is out of range for signed char
+//     unsigned char ch4 = -191; // gives a warning: overflow in conversion from 'int' to 'unsigned char' changes value from '-191' to '65' [-Woverflow] meaning it is out of range for unsigned char
+//    cout << "Character for unsigned -5: " << ch4 << endl;  // Prints 'A' (ASCII 65)
+// cout << "Character for signed -5: " << ch3 << endl;    // Also prints 'A'
 
 // In both cases, the value wraps via modulo and maps to the same ASCII character when printed
 // This holds true only when printing as a char, not when casting to (int)gative value
