@@ -85,7 +85,7 @@ Namespace is a portion of code and  multiple namespace can exist, and if your ar
 we will be using std namespace for `cout`.
 either you use `std::cout` everywhere you use `cout` or just declare `using namespace std;` once at top of your program. we can also create our custom namespace 
 
-```
+```cpp
 #include<iostream>
 using namespace std';
 
@@ -97,7 +97,7 @@ int main() {
 ### to print on a new line 
 To print on a new line we use `endl` or a new line character `'\n'` in single inverted comma backslash n
 
-```
+```cpp
 #include<iostream>
 using namespace std;
 
@@ -176,7 +176,7 @@ int, char, float, double, bool, void
     ```
 
 - `void` --> it returns nothing 
-    ```
+    ```cpp
     void main(){
         it doesnot returns anything
     }
@@ -289,7 +289,7 @@ int main() {
 ```
 
 output
-```
+```cpp
 63456249  // garbage value
 ```
 
@@ -365,7 +365,7 @@ output
 >In C++, assigning a negative value to an unsigned type triggers modulo conversion:
 >`unsigned_result = (signed_value) modulo 2ⁿ`
 
-```
+```cpp
 c = -5 mod 256 = -5%256= 251    // for simple calculation 256-5 = 251
 ```
 
